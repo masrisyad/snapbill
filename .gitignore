@@ -1,0 +1,9 @@
+# Contoh invoice asli klien (jangan dipublikasikan)
+Contoh/
+
+.DS_Store
+Thumbs.db
+node_modules/
+
+# Konfigurasi lokal Claude Code / editor
+.claude/

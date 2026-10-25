@@ -1,0 +1,63 @@
+SnapBill by Silsilara
+Copyright (c) 2026 Risyad Abdala Ramadhan. Hak cipta dilindungi undang-undang. All rights reserved.
+
+===============================================================================
+LISENSI PROPRIETARY — BUKAN PERANGKAT LUNAK OPEN SOURCE
+===============================================================================
+
+[Bahasa Indonesia]
+
+1. Seluruh kode sumber, desain antarmuka, ikon, logo, nama "SnapBill by
+   Silsilara", template invoice, dan dokumentasi dalam repositori ini
+   ("Perangkat Lunak") adalah milik eksklusif Risyad Abdala Ramadhan dan dilindungi oleh
+   Undang-Undang Republik Indonesia Nomor 28 Tahun 2014 tentang Hak Cipta
+   serta perjanjian hak cipta internasional.
+
+2. Tanpa izin tertulis dari pemegang hak cipta, Anda DILARANG untuk:
+   a. menyalin, memperbanyak, atau mengunduh kode sumber untuk digunakan
+      kembali, baik sebagian maupun seluruhnya;
+   b. memodifikasi, menerjemahkan, atau membuat karya turunan;
+   c. mendistribusikan, menerbitkan ulang, menjual, menyewakan, atau
+      mensublisensikan Perangkat Lunak;
+   d. meng-hosting ulang Perangkat Lunak di domain/alamat lain;
+   e. menghapus atau mengubah pemberitahuan hak cipta ini.
+
+3. Dapat dilihatnya kode sumber secara publik (misalnya melalui GitHub atau
+   GitHub Pages) TIDAK memberikan lisensi atau hak apa pun selain hak untuk
+   melihatnya sebagaimana disyaratkan oleh ketentuan layanan platform tersebut.
+
+4. Pengguna diperbolehkan MEMAKAI aplikasi melalui alamat resmi yang
+   disediakan Risyad Abdala Ramadhan untuk keperluan penagihan pribadi maupun usaha.
+   Seluruh data yang dimasukkan pengguna tetap menjadi milik pengguna dan
+   hanya tersimpan di perangkat pengguna.
+
+5. Perangkat Lunak disediakan "SEBAGAIMANA ADANYA" tanpa jaminan apa pun.
+   Pemegang hak cipta tidak bertanggung jawab atas kehilangan data; pengguna
+   disarankan rutin membuat backup melalui fitur yang tersedia.
+
+Permohonan izin penggunaan: hubungi Risyad Abdala Ramadhan.
+
+-------------------------------------------------------------------------------
+
+[English]
+
+All source code, UI designs, icons, logos, the name "SnapBill by Silsilara",
+invoice templates and documentation in this repository (the "Software") are
+the exclusive property of Risyad Abdala Ramadhan and are protected by Indonesian Law No. 28
+of 2014 on Copyright and international copyright treaties.
+
+No license is granted to copy, reproduce, modify, create derivative works of,
+distribute, publish, sell, sublicense, or re-host the Software, in whole or in
+part, without prior written permission from the copyright holder. Public
+visibility of the source code does not grant any license. Use of the hosted
+application at its official address is permitted. The Software is provided
+"AS IS", without warranty of any kind.
+
+-------------------------------------------------------------------------------
+
+Komponen pihak ketiga (tetap di bawah lisensinya masing-masing):
+- jsPDF (MIT)           — vendor/LICENSE-jspdf.txt
+- html2canvas (MIT)     — vendor/LICENSE-html2canvas.txt
+- Barlow Semi Condensed (SIL Open Font License 1.1) — fonts/OFL-BarlowSemiCondensed.txt
+- Fredoka (SIL Open Font License 1.1)               — fonts/OFL-Fredoka.txt
+- Plus Jakarta Sans (SIL Open Font License 1.1)     — fonts/OFL-PlusJakartaSans.txt

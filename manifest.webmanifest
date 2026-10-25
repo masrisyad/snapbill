@@ -1,0 +1,25 @@
+{
+  "name": "SnapBill by Silsilara",
+  "short_name": "SnapBill",
+  "description": "Buat, simpan, dan kirim invoice dalam hitungan detik. Data tersimpan di perangkat, bisa offline.",
+  "id": "./",
+  "start_url": "./#/",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#134e48",
+  "theme_color": "#134e48",
+  "lang": "id",
+  "dir": "ltr",
+  "categories": ["business", "finance", "productivity"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Tagihan baru", "short_name": "Baru", "url": "./#/tagihan/baru", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Belum dibayar", "short_name": "Belum dibayar", "url": "./#/tagihan?status=unpaid", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] }
+  ]
+}
