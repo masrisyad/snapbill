@@ -2,7 +2,7 @@
 import { meta } from './db.js';
 import { clone, deepMerge } from './util.js';
 
-export const APP_VERSION = '1.0.0';
+export const APP_VERSION = '1.0.1';
 
 export const DEFAULT_WA_TEMPLATE =
   'Halo {klien},\n\n' +

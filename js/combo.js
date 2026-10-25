@@ -7,8 +7,10 @@ import { icon } from './icons.js';
 
 const MAX = 60;
 const CLEAR_W = 36; // lebar area ikon ✕, sama dengan padding-right .combo-input
+const TAP_SLOP = 8; // geser lebih dari ini (px) = menggulir daftar, bukan memilih
 let panel = null;
 let state = null; // { input, items, active, spec }
+let press = null; // { x, y, i, top } — posisi saat jari/mouse ditekan
 
 function ensurePanel() {
   if (panel) return panel;
@@ -16,12 +18,20 @@ function ensurePanel() {
   panel.className = 'combo-panel';
   panel.setAttribute('role', 'listbox');
   panel.hidden = true;
-  // pointerdown + preventDefault: fokus tetap di isian, jadi daftar tidak tertutup sebelum dipilih.
+  // preventDefault di pointerdown: fokus tetap di isian, jadi daftar tidak tertutup sebelum dipilih.
+  // Pilihan diambil saat dilepas & hanya bila tidak digeser — supaya daftar bisa digulir di layar sentuh.
   panel.addEventListener('pointerdown', (e) => {
     e.preventDefault();
-    const opt = e.target.closest('[data-i]');
-    if (opt && state) pick(state.items[Number(opt.dataset.i)]);
+    press = { x: e.clientX, y: e.clientY, i: e.target.closest('[data-i]')?.dataset.i, top: panel.scrollTop };
   });
+  panel.addEventListener('pointerup', (e) => {
+    const p = press;
+    press = null;
+    if (!p || !state || p.i === undefined) return;
+    const moved = Math.abs(e.clientX - p.x) > TAP_SLOP || Math.abs(e.clientY - p.y) > TAP_SLOP || Math.abs(panel.scrollTop - p.top) > 2;
+    if (!moved) pick(state.items[Number(p.i)]);
+  });
+  panel.addEventListener('pointercancel', () => (press = null)); // browser mengambil alih untuk menggulir
   document.body.appendChild(panel);
   const reposition = () => state && place();
   window.addEventListener('resize', reposition);
@@ -105,6 +115,7 @@ function open(input, spec, showAll = false) {
   input.setAttribute('aria-expanded', 'true');
   panel.hidden = false;
   render();
+  if (state.active < 0) panel.scrollTop = 0; // buka lagi dari atas, bukan dari posisi guliran sebelumnya
   place();
 }
 

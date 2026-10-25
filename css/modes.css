@@ -330,7 +330,7 @@ body { word-spacing: .04em; }
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2371717a' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 6 6 18M6 6l12 12'/%3E%3C/svg%3E") !important;
 }
 .combo-panel {
-  position: fixed; z-index: 1150; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch;
+  position: fixed; z-index: 1150; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; touch-action: pan-y;
   background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 14px;
   box-shadow: 0 18px 40px -12px rgba(24, 24, 27, .28), 0 2px 6px rgba(24, 24, 27, .06); padding: 4px;
 }

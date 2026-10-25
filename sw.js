@@ -1,7 +1,7 @@
 /* SnapBill by Silsilara — Copyright (c) 2026 Risyad Abdala Ramadhan. All rights reserved.
  * Service worker: simpan seluruh aplikasi di cache agar terbuka instan & bisa offline.
  * Naikkan VERSION setiap rilis agar pengguna menerima pembaruan. */
-const VERSION = 'snapbill-v1.0.0';
+const VERSION = 'snapbill-v1.0.1';
 
 const ASSETS = [
   './',
